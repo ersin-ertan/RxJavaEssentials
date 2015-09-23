@@ -11,7 +11,8 @@
 	tools:context = ".MainActivity">
 
 	<TextView
-		android:text = "Hello World!"
+		android:text = "Hello worldd"
 		android:layout_width = "wrap_content"
-		android:layout_height = "wrap_content"/>
+		android:layout_height = "wrap_content" android:id = "@+id/txtV_hello"
+		/>
 </RelativeLayout>
