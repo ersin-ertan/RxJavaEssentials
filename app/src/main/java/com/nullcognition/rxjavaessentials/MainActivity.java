@@ -2,15 +2,10 @@ package com.nullcognition.rxjavaessentials;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.TextView;
+import android.view.View;
 
-import butterknife.Bind;
-import lombok.Getter;
-import lombok.Setter;
-import rx.Observable;
-import rx.Observer;
-import rx.Subscriber;
-import rx.Subscription;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 // four main classes:
 // Observable, Subjects, Observer, Subscriber
@@ -24,14 +19,15 @@ import rx.Subscription;
 
 public class MainActivity extends AppCompatActivity{
 
-	@Bind(R.id.txtV_hello) TextView txtVHello;
+	@OnClick(R.id.btn_recyclerActivity) void recyclerActivity(final View view){
+//		startActivity(new Intent(this, RecyclerActivity.class));
+	}
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-
-
+		ButterKnife.bind(this);
 	}
 }
 

@@ -1,4 +1,4 @@
-package com.nullcognition.rxjavaessentials;
+package com.nullcognition.rxjavaessentials.base_examples;
 // ersin 23/09/15 Copyright (c) 2015+ All rights reserved.
 
 
